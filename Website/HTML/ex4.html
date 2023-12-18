@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //giaithua bth;
+        // function giaiThua(num){
+        //     var output =1;
+        //     for(var i=num; i>0;i--){
+        //         output=output*i;
+        //     }
+        //     return output;
+        // }
+        // console.log(giaiThua(6));
+
+        //giaithua dequi;
+        function giaiThua(num){
+            if(num>0){
+                return num* giaiThua(num-1);
+            }
+            return 1;
+        }
+        //console.log(giaiThua(6))
+
+        //tinh tong cac so 1-->100;
+       function tinhTong(number){
+        if(number>0){
+            return number+tinhTong(number-1);
+        }
+        return 0;
+       }
+       //console.log(tinhTong(100));
+
+       // Dãy số fibo
+    
+       const num = parseInt(prompt('Enter a positive number: '));
+       function Fibonacci(num){
+        if(num<0){
+            return -1;
+        } else 
+        if (num==0){
+            return 1;
+        } else {
+            return Fibonacci(num-1)+Fibonacci(num-2);
+        }
+    
+       }
+       //console.log('Dãy số Fibonacci: ')
+
+       //document.write(Fibonacci(10));
+       for(var i=1;i<=num;i++){
+       // console.log(Fibonacci(i));
+       }
+
+       //
+
+       
+    </script>
+</body>
+</html>

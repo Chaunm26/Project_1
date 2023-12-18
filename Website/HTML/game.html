@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number</title>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="number" id="guess" name="guess">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
+    <script>
+        var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            var guess = document.getElementById("guess").value;
+            if (guess == secretNumber) {
+                document.getElementById("message").innerHTML = "You guessed it!";
+            } else if (guess > secretNumber) {
+                document.getElementById("message").innerHTML = "Too high! Guess again.";
+            } else {
+                document.getElementById("message").innerHTML = "Too low! Guess again.";
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whack-a-Mole</title>
+    <style>
+        #gameboard {
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .mole {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Whack-a-Mole</h1>
+    <p>Click the moles as they pop up within 10 seconds:</p>
+    <div id="gameboard">
+        <div class="mole" id="mole1"></div>
+        <div class="mole" id="mole2"></div>
+        <div class="mole" id="mole3"></div>
+        <div class="mole" id="mole4"></div>
+        <div class="mole" id="mole5"></div>
+        <div class="mole" id="mole6"></div>
+    </div>
+    <p id="score">Score: 0</p>
+    <button onclick="startGame()">Start</button>
+    <script>
+        var score = 0;
+        var timeLeft = 10;
+        var moleInterval;
+
+        function startGame() {
+            document.getElementById("score").innerHTML = "Score: 0";
+            score = 0;
+            timeLeft = 10;
+            moleInterval = setInterval(showMole, 1000);
+            setTimeout(endGame, 10000);
+        }
+
+        function showMole() {
+            var randomMole = Math.floor(Math.random() * 6) + 1;
+            var mole = document.getElementById("mole" + randomMole);
+            mole.style.display = "block";
+            setTimeout(function() {
+                mole.style.display = "none";
+            }, 500);
+        }
+
+        function endGame() {
+            clearInterval(moleInterval);
+            alert("Time's up! Your final score is " + score);
+        }
+
+        function whackMole(mole) {
+            mole.style.display = "none";
+            score++;
+            document.getElementById("score").innerHTML = "Score: " + score;
+        }
+    </script>
+</body>

@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/412/075/original/abstract-pastel-purple-minimal-background-for-invitation-or-banner-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    width: 385px;
+    height: 680px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+.form-field input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(161, 177, 207);
+    margin-bottom: 10px;
+}
+#fg{
+    text-align: right;
+    padding-right: 40px;
+    font-size: small;
+    margin-top: 7px;
+}
+button{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    background-image: url(https://adsense.sgp1.digitaloceanspaces.com/congthucexcel.com/2022/03/1647666247_798_Background-mau-loang-dep.jpg);
+    background-position: center;
+    border: none;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 21px;
+    margin-bottom: 30px;
+
+}
+.or{
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    text-align: left;
+    padding-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(167, 163, 163);
+    margin-bottom: 5px;
+    
+}
+.k{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.fa-lock,.fa-user{
+    color: rgb(203, 196, 196);
+}
+.fa-facebook{
+    color: #0c4f9c;
+}
+.fa-twitter{
+    color:rgb(0, 255, 247);
+}
+.fa-google{
+    color: rgb(219, 67, 12);
+}
+.last{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}

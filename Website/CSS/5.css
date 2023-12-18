@@ -1,0 +1,58 @@
+
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 330px;
+    height: 150px;
+    padding-top: 20px;
+}
+#first{
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+    padding-top: 0px;
+}
+#goal{
+    text-align: center;
+    font-size: larger;
+    padding-top: 0px; padding-bottom: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+.box{
+    
+    background-color: blanchedalmond;
+    width: 900px;
+    margin: 0px auto;
+}
+
+h2{
+    text-align: center;
+    color: rgb(119, 116, 116);
+
+} 
+#hang1{
+    display: flex;
+    width: 900px;
+    margin:0px auto;
+}
+#hang1 div{
+    align-items: center;
+    margin: 0;
+    padding-right: 20px;
+    width: 100%;
+}
+
+#two{
+    text-align: left;
+    font-weight: 600;
+    font-size: larger;
+    padding-bottom: 15px ;
+}
+img{
+    width: 100px; height: 100px; 
+    padding-right: 15px;
+    padding-left: 10px;
+}

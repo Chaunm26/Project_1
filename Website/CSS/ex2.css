@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    margin: 0;
+}
+#heading{
+    text-align: center;
+    font-size: 1.5cm;
+    margin-top: 2cm;
+}
+button{
+    text-align: center;
+    width: 3cm;
+    height: 1cm;
+    
+}
+.option{
+    text-align: center;
+}
+#blue{
+    color: azure;
+    background-color: darkblue;
+    border-radius: 10px;
+    border: 2px;
+}
+#green{
+    color: azure;
+    background-color: green;
+    border-radius: 10px;
+    border: 2px;
+
+}
+#red{
+    color:azure;
+    background-color: red;
+    border-radius: 10px;
+    border: 2px;
+
+}
+.image{
+    text-align: center;
+    margin-top: 2cm;
+}
+img{
+    width: 10cm;
+}
+.option2{
+    text-align: center;
+}
+input{
+    width: 3cm;
+    height: 1cm;
+}
